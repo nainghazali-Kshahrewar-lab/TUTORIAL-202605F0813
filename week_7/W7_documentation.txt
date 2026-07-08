@@ -1,1 +1,22 @@
+BUG Identified in MAIN.py
+I. The import statement was incomplete.
+   Original:
+   from __________ import __________
 
+Fixed:
+   from food_order import calculate_total
+
+II. The function to calculate the total payment was missing.
+   Original:
+   total = __________
+
+Fixed:
+   total = calculate_total(price, quantity)
+
+BUG Identified in food_order.py
+The calculate_total() function was incomplete.
+Added validation to check if the price is negative.
+Added validation to check if the quantity is negative.
+Returned "invalid price" when the price is less than 0.
+Returned "invalid quantity" when the quantity is less than 0.
+Returned price * quantity for valid inputs.
